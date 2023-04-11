@@ -1,409 +1,185 @@
-
 <!DOCTYPE html>
-<html lang="zh-hant" >
+<html lang="zh-TW">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta name="format-detection" content="telephone=no" />
-    <title> Hive </title>
-    <meta property="og:title" content="Summoners War: Chronicles 優惠券兌換所" />
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://hive-fn.qpyou.cn/hubweb/gmnotice/appcenter/production/1667821751413.png" />
-    <meta property="og:url" content="http://coupon.withhive.com/771" />
-    <meta property="og:description" content="Summoners War: Chronicles 請輸入優惠券序號。" />
-    <link href="//hive-fn.qpyou.cn/markup/img/common/font/social/font_social.css" rel="stylesheet" type="text/css">
-    <link href="//hive-fn.qpyou.cn/hivecoupon/third_party/coupon.css?v=11" rel="stylesheet" type="text/css">
-    <link rel="apple-touch-icon" sizes="57x57" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/favicon-16x16.png">
-    <link rel="manifest" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/manifest.json">
-    <meta name="msapplication-config" content="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/browserconfig.xml" />
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <style>
-        .not_show { display:none; }
-        .show { display:block; }
-    </style>
-</head>
-<body>
-        <div id="HIVEcoupon">
-                <div class="header">
-            <h1 class="title">優惠券兌換所</h1>
-            <h2 class="game_title">Summoners War: Chronicles</h2>
-            <div class="game_img">
-                <img src="https://hive-fn.qpyou.cn/hubweb/gmnotice/appcenter/production/1667821751413.png" alt="Summoners War: Chronicles">
-            </div>
-        </div>
-        <div class="content">
-            <div class="form">
-                <div class="input_box server_list_area not_show">
-                    <div class="input_title">遊戲伺服器</div>
-                    <div class="select_wrap">
-                        <button type="button" class="btn_select">請選擇遊戲伺服器。</button>
-                        <ul class="list_select"></ul>
-                    </div>
-                    <div class="err_div_svr error not_show">請選擇遊戲伺服器。</div>
-                </div>
-                <div class="input_box">
-                    <label for="cs_code" class="input_title">CS Code</label>
-                    <input type="text" id="cs_code"  placeholder="請輸入CS Code。" />
-                    <div class="err_div_cs error not_show">請輸入CS Code。</div>
-                </div>
-                <div class="input_box">
-                    <label for="coupon_code" class="input_title">優惠券序號</label>
-                    <input type="text" id="coupon_code" maxlength="50" placeholder="請輸入優惠券序號。" />
-                    <div class="err_div_coupon error not_show">請輸入優惠券序號。</div>
-                </div>
-                <button type="button" class="btn_use">使用優惠券</button>
-            </div>
-            <dl class="notice">
-                <dt>注意事項</dt>
-                                    <dd>CS Code可至遊戲的設定中確認。</dd>
-                    <dd>優惠券獎勵可在遊戲收件箱中領取。根據網路連線狀況，可能會出現延遲發送的狀況。</dd>
-                    <dd>無法登錄已使用過的優惠券。</dd>
-                    <dd>使用優惠券獲得的道具，無法退款或交換。</dd>
-                    <dd>由於個人不當操作而發生的問題，將不予以負責。</dd>
-                            </dl>
-                        <a href="https://customer.withhive.com/com2us/ask/771" target="_blank" class="link_customer">客服中心</a>
-            <p class="copyright">© Com2uS Platform Corp.</p>
-        </div>
-    </div>
-    <div class="pop_wrap coupon_lyr not_show">
-        <div class="pop_layer">
-            <div class="pop_container">
-                <div>
-                    <div class="pop_contents">
-                        <p id="layer_msg">請輸入優惠券序號。</p>
-                    </div>
-                    <div class="btns">
-                        <button type="button" class="btn_close" id="layer_close_btn">關閉</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="pop_wrap server coupon_server_lyr not_show">
-        <div class="pop_layer">
-            <div class="cs_code flex"></div>
-            <p class="desc server_lyr_desc">請選擇欲領取道具的伺服器。</p>
-            <ul class="pop_contents layer_server_list"></ul>
-            <div class="btns">
-                <button type="button" class="btn_confirm">使用優惠券</button>
-                <button type="button" class="btn_cancel">關閉</button>
-            </div>
-        </div>
-    </div>
-
+    <meta charset="UTF-8">
+    <title>魔靈召喚2一鍵兌換</title><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=GTM-WH4M38Q"></script>
     <script>
-        var gParam = {"gameInfo":{"game_id":"com.com2us.chroniclesus","gameindex":"771","default_lang":"en","icon_url":"https:\/\/hive-fn.qpyou.cn\/hubweb\/gmnotice\/appcenter\/production\/1667821751413.png","rep_url":"https:\/\/hive-fn.qpyou.cn\/hubweb\/gmnotice\/appcenter\/production\/1668480105446.jpg","game_name_ko":"Summoners War: Chronicles","game_name_en":"Summoners War: Chronicles","community_url":0,"community_web_coupon_exchange_use":0,"notice_custom_use":0,"game_server_api":"https:\/\/live-chroniclesuse-gameapi.qpyou.cn:24003\/coupon\/get_server_list","setting_idx":"301","company_middle_code_name":"com2us","game_name_current":"Summoners War: Chronicles"},"csCode":"","gameWorldList":[{"no":"22263","name":"EU","display_world_title_ko":"EU","display_world_title_en":"EU","revision":"3"},{"no":"22257","name":"JP","display_world_title_ko":"JP","display_world_title_en":"JP","revision":"3"},{"no":"22252","name":"SEA","display_world_title_ko":"SEA","display_world_title_en":"SEA","revision":"3"},{"no":"17959","name":"US","display_world_title_ko":"US\ub3d9\ubd80","display_world_title_en":"US\ub3d9\ubd80","revision":"3"},{"no":"19940","name":"US-2","display_world_title_ko":"US\uc11c\ubd80","display_world_title_en":"US\uc11c\ubd80","revision":"3"}],"serverApiUse":true,"language":"zh-hant","message":{"third_party_empty_cs_code":"\u8acb\u8f38\u5165CS Code\u3002","third_party_empty_coupon":"\u8acb\u8f38\u5165\u512a\u60e0\u5238\u5e8f\u865f\u3002","coupon_page_confirm":"\u78ba\u8a8d","third_party_coupon_title":"\u512a\u60e0\u5238\u514c\u63db\u6240","third_party_coupon_code":"\u512a\u60e0\u5238\u5e8f\u865f","third_party_coupon_use":"\u4f7f\u7528\u512a\u60e0\u5238","third_party_cs_code":"CS Code","third_party_contacts":"\u5ba2\u670d\u4e2d\u5fc3","third_party_cs_code_only_number":"\u50c5\u9650\u8f38\u5165\u6578\u5b57\u3002","third_party_game_server":"\u904a\u6232\u4f3a\u670d\u5668","third_party_select_game_server":"\u8acb\u9078\u64c7\u904a\u6232\u4f3a\u670d\u5668\u3002","third_party_select_game_server2":"\u8acb\u9078\u64c7\u6b32\u9818\u53d6\u9053\u5177\u7684\u4f3a\u670d\u5668\u3002","third_party_reenter_coupon_code":"\u8acb\u91cd\u65b0\u8f38\u5165\u512a\u60e0\u5238\u5e8f\u865f\u3002","third_party_get_game_server_info_error":"\u7121\u6cd5\u78ba\u8a8d\u904a\u6232\u4f3a\u670d\u5668\u8cc7\u8a0a\u3002","third_party_get_request_server_error":"\u767c\u751f\u66ab\u6642\u6027\u932f\u8aa4\u3002<br \/>\u8acb\u7a0d\u5f8c\u518d\u8a66\u3002","third_party_get_matched_cscode_not_found":"\u627e\u4e0d\u5230\u8a72\u73a9\u5bb6\u8cc7\u8a0a\u3002<br \/>\u8acb\u91cd\u65b0\u78ba\u8a8dCS CODE\u5f8c\u518d\u8a66\u3002","third_party_no_game_server":"\u7121\u904a\u6232\u4f3a\u670d\u5668\u3002","third_party_notice":"\u6ce8\u610f\u4e8b\u9805","third_party_notice1":"CS Code\u53ef\u81f3\u904a\u6232\u7684\u8a2d\u5b9a\u4e2d\u78ba\u8a8d\u3002","third_party_notice2":"\u512a\u60e0\u5238\u734e\u52f5\u53ef\u5728\u904a\u6232\u6536\u4ef6\u7bb1\u4e2d\u9818\u53d6\u3002\u6839\u64da\u7db2\u8def\u9023\u7dda\u72c0\u6cc1\uff0c\u53ef\u80fd\u6703\u51fa\u73fe\u5ef6\u9072\u767c\u9001\u7684\u72c0\u6cc1\u3002","third_party_notice3":"\u7121\u6cd5\u767b\u9304\u5df2\u4f7f\u7528\u904e\u7684\u512a\u60e0\u5238\u3002","third_party_notice4":"\u4f7f\u7528\u512a\u60e0\u5238\u7372\u5f97\u7684\u9053\u5177\uff0c\u7121\u6cd5\u9000\u6b3e\u6216\u4ea4\u63db\u3002","third_party_notice5":"\u7531\u65bc\u500b\u4eba\u4e0d\u7576\u64cd\u4f5c\u800c\u767c\u751f\u7684\u554f\u984c\uff0c\u5c07\u4e0d\u4e88\u4ee5\u8ca0\u8cac\u3002","third_party_notice1_walking_dead":"CS Code\u53ef\u81f3\u904a\u6232\u5167\u5de6\u4e0a\u65b9\u7684\u982d\u50cf \uff1e \u5e33\u865f\u5206\u9801\u4e2d\u78ba\u8a8d\u3002","third_party_close":"\u95dc\u9589","third_party_community_title":"\u793e\u7fa4","third_party_move_community_to_session_expiry":"\u9023\u7dda\u5df2\u5931\u6548\uff0c\u5373\u5c07\u8fd4\u56de\u793e\u7fa4\u7db2\u7ad9\u3002","third_party_invalid_connection":"\u9023\u7dda\u932f\u8aa4\u3002","third_party_automatically_move":"\u7a0d\u5f8c\u5c07\u81ea\u52d5\u79fb\u52d5\u3002","third_party_notice2_chronicles":"\u4f7f\u7528\u512a\u60e0\u5238\u6642\uff0c\u734e\u52f5\u5c07\u767c\u9001\u81f3\u9996\u6b21\u767b\u5165\u7684\u4f3a\u670d\u5668\u6536\u4ef6\u7bb1\u4e2d\u3002","third_party_notice3_chronicles":"\u767c\u9001\u81f3\u6536\u4ef6\u7bb1\u7684\u734e\u52f5\u5c07\u6703\u4fdd\u7ba17\u5929\uff0c\u8d85\u904e\u671f\u9650\u5247\u6703\u81ea\u52d5\u522a\u9664\u7121\u6cd5\u6062\u5fa9\u3002","third_party_success_chronicles":"\u8a72\u512a\u60e0\u5238\u5df2\u4f7f\u7528\u5b8c\u7562\u3002<br \/>\u9032\u5165\u904a\u6232\u5f8c\u9078\u64c7\u6b32\u9818\u53d6\u734e\u52f5\u7684\u4f3a\u670d\u5668\uff0c\u4e26\u81f3\u6536\u4ef6\u7bb1\u9818\u53d6\uff01"},"noticeCustomUse":false,"notices":[]};
-        var rCode = 200;
-        var server = "";
-
-        const submitCoupon = async () => {
-            let request = {
-                'language': gParam.language,
-                'server': gParam.serverApiUse === false ? ($('.list_select > li.selected > button').val() ? $('.list_select > li.selected > button').val() : '') : ($("input[name='server']:checked").val() ? $("input[name='server']:checked").val() : ''),
-                'cs_code': $('#cs_code').val().trim().replace(/[^0-9]/g,''),
-                'coupon': $('#coupon_code').val().trim()
-            };
-
-            if(gParam.serverApiUse === true) {
-                const checkedServer = ($("input[name='server']:checked").val() === undefined) ? '' : ( $("input[name='server']:checked").val() ? $("input[name='server']:checked").val() : '' );
-                const targetServer = ($("input[name='server']:checked").val() === undefined) ? '' : ( $("input[name='server']:checked").val().split("|")[1] ? $("input[name='server']:checked").val().split("|")[1] : '' );
-                request.additional_info = (targetServer !== '' ? ($("input[name='additional_info_".concat(targetServer, '_', ( checkedServer.split("|")[2] ? checkedServer.split("|")[2] : '' ))+"']").val()) : '');
-            }
-
-            const response = await fetch('/tp/coupon/use', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Page-Key': 'ajllZXAkakZsREQiSlJOfDc3NTUwMjIxNjFTVz1xYlVTWWdFS08wMTA4a0c=',
-                    'CT-Key': '',
-                },
-                body: JSON.stringify(request),
-            });
-            if (! response.ok) {
-                const message = `An error has occurred: ${response.status} ${response.statusText}`;
-                throw new Error(message);
-            }
-            return await response.json();
-        }
-
-        const getServerList = async () => {
-            // if exist server info, processed to submitCoupon.
-            const request = {
-                'language': gParam.language,
-                'server': server,
-                'cs_code': $('#cs_code').val().trim().replace(/[^0-9]/g,''),
-            }
-
-            const response = await fetch('/tp/coupon/server_list', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Page-Key': 'ajllZXAkakZsREQiSlJOfDc3NTUwMjIxNjFTVz1xYlVTWWdFS08wMTA4a0c=',
-                    'CT-Key': '',
-                },
-                body: JSON.stringify(request),
-            });
-            if (! response.ok) {
-                const message = `An error has occurred: ${response.status} ${response.statusText}`;
-                throw new Error(message);
-            }
-            return await response.json();
-        }
-
-        function showMessageLayer(message, code = null) {
-            if(code != null) rCode = Number(code);
-            $('.coupon_lyr').removeClass('not_show');
-            $('#layer_msg').html(message);
-        }
-
-        function showServerListLayer(res) {
-            if(res.code != null && res.code !== 100) {
-                showMessageLayer(res.message, res.code);
-            } else {
-                $('.server_lyr_desc').attr({ style: 'color: #627793' });
-                $(".coupon_server_lyr > .pop_layer > .cs_code").html($('#cs_code').val().trim());
-                if(res.serverList.length > 0) {
-                    // reset server list
-                    $('.layer_server_list').html('');
-
-                    let count = 1;
-                    let extraDisplay = res.extraDisplay;
-
-                    res.serverList.forEach((e) => {
-                        let li = document.createElement('li');
-                        let inpNode = document.createElement('input');
-                        let inpNode2 = document.createElement('input');
-                        let serverDisplayName = (e['server_display_names'][gParam.language]) ? e['server_display_names'][gParam.language] : e['server_display_names'][res.defaultLang];
-                        let extraValues = extraDisplay > -1 ? ' - '.concat(e['additionalinfoValue']) : "";
-                        let labelNode = document.createElement('label');
-                        let spanNode = document.createElement('span');
-                        let btnText = document.createTextNode(serverDisplayName.concat(extraValues));
-
-                        $(inpNode).attr({ type: 'radio', id: 'server_'.concat(e['server_id'], '_', count), name: 'server', class: 'input_check', value: gParam.gameInfo['gameindex'].concat('|', e['server_id'], '|', count, '|', serverDisplayName) });
-                        $(inpNode2).attr({ type: 'hidden', id: 'additional_info_'.concat(e['server_id'], '_', count), name:'additional_info_'.concat(e['server_id'], '_', count), value: e['additionalinfo']});
-                        $(labelNode).attr({ for: 'server_'.concat(e['server_id'], '_', count), class: 'label_check' });
-                        $(labelNode).append(spanNode);
-                        $(spanNode).append(btnText);
-                        $(li).attr({ class: 'check' });
-                        $(li).append(inpNode);
-                        $(li).append(labelNode);
-                        $(li).append(inpNode2);
-                        count++;
-
-                        $('.layer_server_list').append(li);
-                    });
-
-                    $('.coupon_server_lyr').removeClass('not_show');
-                } else {
-                    showMessageLayer(gParam.message.third_party_get_matched_cscode_not_found, 394);
-                }
-            }
-        }
-
-        $(document).ready(function () {
-            const couponMin = 4;
-            const couponMax = 30;
-            const dropdown = $('.list_select');
-            const displayDefaultLang = (gParam.language !== 'en' && gParam.language !== 'ko') ? 'en' : gParam.language;
-            const gameWorldList = gParam.gameWorldList;
-            const serverApiUse = gParam.serverApiUse;
-
-            // check the server api using
-            if(serverApiUse === false) {
-                // select area option create
-                if(gameWorldList != null && gameWorldList.length > 0) {
-                    gameWorldList.forEach((e) => {
-                        let li = document.createElement('li');
-                        let btnNode = document.createElement('button');
-                        let btnText = document.createTextNode(e['display_world_title_'+displayDefaultLang]);
-
-                        $(btnNode).attr({ type: 'button', value: gParam.gameInfo['gameindex'].concat('|', e['name'], '|', e['display_world_title_'+displayDefaultLang]) });
-                        $(btnNode).append(btnText);
-                        $(li).append(btnNode);
-
-                        dropdown.append(li);
-                    });
-                } else {
-                    let li = document.createElement('li');
-                    let btnNode = document.createElement('button');
-                    let btnText = document.createTextNode(gParam.message.third_party_no_game_server);
-
-                    $(btnNode).attr({ type: 'button', value: ''});
-                    $(btnNode).append(btnText);
-                    $(li).append(btnNode);
-
-                    dropdown.append(li);
-                }
-            }
-
-            $('.btn_select').on('click', function(e) {
-                e.preventDefault();
-                $(this).siblings().addClass("on");
-            });
-
-            // select area click check
-            $('.list_select').click((e) => {
-                // remove before selected class, if exist
-                $('.list_select > li').siblings().removeClass("selected");
-
-                const targetValue = e.target.value;
-                if(targetValue !== undefined && targetValue.split('|')[2] != null) {
-                    $(e.target).parent().addClass("selected");
-                    $('.btn_select').text(targetValue.split('|')[2]);
-                    $('.err_div_svr').addClass("not_show");
-                }
-            });
-
-            // check the click for outbound select area
-            $('html').click((e) => {
-                if (!$(e.target).hasClass('btn_select') && !$(e.target).hasClass('dropdown')) {
-                    dropdown.removeClass('on');
-                }
-            });
-
-            // cs code check
-            $('#cs_code').on('input propertychange', function(e) {
-                $('.err_div_cs').text(gParam.message.third_party_empty_cs_code);
-
-                if(this.value.trim() === '') {
-                    $('.err_div_cs').removeClass('not_show');
-                } else {
-                    $('.err_div_cs').addClass('not_show');
-                }
-            });
-
-            // coupon check
-            $('#coupon_code').on('input propertychange', function(e) {
-                if(this.value.trim() === '') {
-                    $('.err_div_coupon').removeClass('not_show');
-                } else {
-                    let _coupon = $('#coupon_code').val().trim();
-                    if (_coupon.length < couponMin || _coupon.length > couponMax ) {
-                        $('.err_div_coupon').removeClass('not_show');
-                    } else {
-                        $('.err_div_coupon').addClass('not_show');
-                    }
-                }
-
-                this.value = this.value.toUpperCase();
-            });
-
-            $('.btn_use').click((e) => {
-                server = $('.list_select > li.selected > button').val() ? $('.list_select > li.selected > button').val() : '';
-                let coupon = $('#coupon_code').val().trim();
-                let csCode = $('#cs_code').val().trim();
-                let numRegex = /^[0-9]*$/
-
-                if(serverApiUse === true) {
-                    // set default data
-                    server = gParam.gameInfo['gameindex'].concat('|', 'USE_API');
-                }
-
-                if(isNaN(csCode) || !numRegex.test(csCode)) {
-                    $('.err_div_cs').text(gParam.message.third_party_cs_code_only_number);
-                    $('.err_div_cs').removeClass('not_show');
-                    return;
-                }
-
-                if (server === '' || $('.btn_select').text() === gParam.message.third_party_select_game_server) {
-                    $('.err_div_svr').removeClass('not_show');
-                }
-
-                if(csCode === '') {
-                    $('.err_div_cs').text(gParam.message.third_party_empty_cs_code);
-                    $('.err_div_cs').removeClass('not_show');
-                }
-
-                if(coupon === '') {
-                    $('.err_div_coupon').removeClass('not_show');
-                }
-
-                if(server === '' || csCode === '' || coupon === '') {
-                    return;
-                }
-
-                if (coupon.length < couponMin || coupon.length > couponMax ) {
-                    return;
-                }
-
-                $('.btn_use').attr('disabled', 'disabled'); // multiple click prevent
-                if(serverApiUse === true) {
-                    getServerList().then(response => showServerListLayer(response)).catch(error => alert(error.message));
-                } else {
-                    submitCoupon().then(response => showMessageLayer(response.msg, response.code)).catch(error => alert(error.message));
-                }
-            });
-
-            $('.btn_confirm').click((e) => {
-                let server_confirm = $("input[name='server']:checked").val() ? $("input[name='server']:checked").val() : '';
-                let coupon = $('#coupon_code').val().trim();
-                let csCode = $('#cs_code').val().trim();
-                let numRegex = /^[0-9]*$/
-
-                if (server_confirm === '') {
-                    $('.server_lyr_desc').attr({ style: 'color: #e21212' });
-                    return;
-                }
-
-                $('.coupon_server_lyr').addClass('not_show');
-                $('.btn_use').attr('disabled', 'disabled'); // multiple click prevent
-                submitCoupon().then(response => showMessageLayer(response.msg, response.code)).catch(error => alert(error.message));
-            });
-
-            // layer popup setting
-            $('.btn_close').click((e) => {
-                $('.btn_use').removeAttr('disabled'); // multiple click prevent
-
-                switch (rCode) {
-                    case 399:
-                        let _nowTime = new Date().getTime();
-                        // When code 399 is returned in webview, timestamp value is added on the current url due to DSA cache problem.
-                        if(window.location.href !== "") {
-                            window.location.href = (window.location.search !== "" ?
-                                window.location.href.replace(window.location.search, "").concat("?t=", _nowTime.toString()) :
-                                window.location.href.concat("?t=", _nowTime.toString()));
-                        } else {
-                            window.location.href = "/771/zh-hant";
-                        }
-                        break;
-                    case 393:
-                    case 392:
-                        window.location.href = "0";
-                        break;
-                    case 390:
-                    case 391:
-                        window.location.href = "/771/zh-hant";
-                        break;
-                    default:
-                        $('.coupon_lyr').addClass('not_show');
-                        break;
-                }
-            });
-
-            $('.btn_cancel').click((e) => {
-                $('.coupon_server_lyr').addClass('not_show');
-                $('.btn_use').removeAttr('disabled');
-            });
-
-            // verify check
-                    });
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'GTM-WH4M38Q');
     </script>
+</head>
+
+<body>
+    <p><span>*一鍵兌換*</span></p>
+    <p><br></p>
+    <p><span>CS Code : </span><input type="text" id="cs_code"></p>
+    <p>請選擇伺服器 : 
+  <select name="server">
+      <option value ="771|SEA|5|全球伺服器 - 亞洲 - 阿里爾">亞洲 - 阿里爾</option> <option value ="771|SEA|6|全球伺服器 - 亞洲 - 費得">亞洲 - 費得</option>
+<option value="771|SEA|7|全球伺服器 - 亞洲 - 露菲納斯">亞洲 - 露菲納斯</option>
+        </select></p>
+<p><button onclick="req();">開始</button></p>
+<hr>
+  <p><span>[檢查/複製CS代碼的方法]</span></p>
+<p>1. 從主選單中選擇’設定’鈕。</p>
+<p>2. 在’設定-帳號’頁面中確認CS代碼。</p>
+<p>3. 點擊"複製鈕"複製CS代碼。</p>
+    <hr>
+    <p><br></p>
+    <p><span>透過連結網頁可添加兌換碼,<a href="https://docs.google.com/spreadsheets/d/1sgR9JXTRieL60ULy37ban54KWX5EiVxT7BOMCpz4BPk/edit?usp=drivesdk" rel="noopener noreferrer" target="_blank">點擊這裡</a></span></p>
+    <p><br></p>
+    <div id="example-table"><br></div>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <p>
+        <link href="https://unpkg.com/tabulator-tables@4.1.4/dist/css/tabulator.min.css" rel="stylesheet">
+    </p>
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.1.4/dist/js/tabulator.min.js"></script>
+    <script>
+        function setCookie(cookie_name, value, days) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + days);
+        
+            var cookie_value = escape(value) + ((days == null) ? '' : '; expires=' + exdate.toUTCString());
+            document.cookie = cookie_name + '=' + cookie_value;
+        }
+        
+        function getCookie(cookie_name) {
+            var x, y;
+            var val = document.cookie.split(';');
+        
+            for (var i = 0; i < val.length; i++) {
+                x = val[i].substr(0, val[i].indexOf('='));
+                y = val[i].substr(val[i].indexOf('=') + 1);
+                x = x.replace(/^\s+|\s+$/g, '');
+                if (x == cookie_name) {
+                    return unescape(y);
+                }
+            }
+        
+            return null
+        }
+        
+        let cs_code = getCookie('cs_code')
+        let server = getCookie('server')
+        
+        if (cs_code) { $('#cs_code').val(cs_code) }
+        var tabledata = [
+            { id: 1, code: "", result: 0, response: '', description: '要求' },
+            { id: 2, code: " ", result: 0, response: '', description: 'Request' },
+            { id: 3, code: "", result: 0, response: '', description: 'Request' },
+            { id: 4, code: "", result: 0, response: '', description: 'Request' },
+            { id: 5, code: "", result: 0, response: '', description: 'Request' },
+            { id: 6, code: "", result: 0, response: '', description: 'Request' },
+            { id: 7, code: "", result: 0, response: '', description: 'Request' },
+            { id: 8, code: "", result: 0, response: '', description: 'Request' },
+            { id: 9, code: "", result: 0, response: '', description: 'Request' },
+            { id: 10, code: "", result: 0, response: '', description: 'Request' },
+        ];
+        
+        function req() {
+            var cs_code = $('#cs_code').val()
+            var server = $('#server').val()
+            setCookie('cs_code', cs_code)
+            setCookie('server', server)
+            for (var a in tabledata) {
+                let i = a
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://coupon.withhive.com/tp/coupon/use',
+                    headers: {
+'Content-Type': 'application/json',
+'Page-Key': 'cSpyZDF7QHZvIylbWVRjfDc3MjkxNDIxNjFVcU4zVTgqYXUzQTxEMTQ4aiM=',
+     'CT-Key': ''
+                },
+                    data: {
+                  "language":"zh-hant",
+"server":server,
+"cs_code":"cs_code",
+"coupon":tabledata[i]['code'],
+
+},
+                    success: function (data) {
+                        if (data['resultCode'] === '成功') {
+                            tabledata[i]['result'] = 1
+                            tabledata[i]['description'] = data['rewardItem']['rewardTitle']
+                        } else if (data['resultCode'] === 'NOT_EXISTS_PID') {
+                            tabledata[i]['description'] = '不存在的 CS Code'
+                        } else if (data['resultCode'] === 'COUPON_ALREADY_USE') {
+                            tabledata[i]['description'] = '兌換碼已使用'
+                        } else if (data['resultCode'] === 'COUPON_WRONG') {
+                            tabledata[i]['description'] = '兌換碼錯誤'
+        			} else if (data['resultCode'] === 'COUPON_RESTRICT') {
+                            tabledata[i]['description'] = '兌換碼限制,兌換碼失敗次數過多。請在在 1 小時後輸入.'
+                        } else {
+                            tabledata[i]['description'] = '未知的請求'
+                        }
+                        tabledata[i]['response'] = data['resultCode']
+                        table.updateData(tabledata)
+                    }
+                })
+            }
+        }
+        
+        google.charts.load('current', { packages: ['corechart'] }).then(function () {
+            var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1sgR9JXTRieL60ULy37ban54KWX5EiVxT7BOMCpz4BPk/gviz/tq?tqx=out:html&tq=SELECT+B&gid=2000340401');
+            
+            query.send(function (response) {
+                var dataTable = response.getDataTable();
+                var jsonData = dataTable.toJSON();
+                jsonData = JSON.parse(jsonData);
+                for (var i = 0; i < jsonData.rows.length; i++) {
+                    var htmlData = jsonData.rows[i].c[0].v;
+                    tabledata[i]['code'] = htmlData;
+                    table.updateData(tabledata);
+                }
+        
+            });
+        });
+        
+        var table = new Tabulator("#example-table", {
+            data: tabledata,          
+         //從數組中加載行數據
+            reactiveData: true,
+            layout: "fitColumns",  
+         //使列適合表格的寬度
+            responsiveLayout: "hide", 
+         //隱藏不適合表格的列
+            tooltips: true,   
+         //在單元格上顯示工具提示
+            addRowPos: "top",   
+         //添加新行時，將其添加到表格的頂部
+            history: true, 
+         //允許對錶進行撤消和重做操作
+            movableColumns: true, 
+         //允許更改列順序
+            resizableRows: true, 
+         //允許更改行順序
+            columns: [                 
+         //定義表列
+  { title: "No", field: "id", width: 70, editor: false },
+  { title: "兌換碼", field: "code", width: 100, editor: "input" },
+                {
+                    title: "狀態",
+                    field: "result",
+                    width: 90,
+                    hozAlign: "center",
+                    formatter: "tickCross",
+                    sorter: "boolean",
+                    editor: false
+                },
+                { title: "結果", field: "response", width: 70, editor: false },
+                { title: "描述", field: "description", editor: false },
+            ],
+        });
+    </script>
+
+<div style="color: red">Created with <a href="https://wordtohtml.net/">WordToHTML.net</a> trial.</div>
 </body>
+
 </html>
