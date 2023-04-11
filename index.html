@@ -5,13 +5,33 @@
 </head>
 <body>
   <div class='app'>
-    <form method='GET' action='https://google.com'>
-      username:<input name="username"/>
-      <input type='submit'/>
-    </form>
+
   </div>
   <script type="text/javascript">
+    // 使用 ajax 也就是用瀏覽器所提供的東西
+    // XMLHttpRequest 是瀏覽器提供的 class，用 new 的方式可以 new 出一個 instance => 產生一個 XMLHttpRequest
+    const request = new XMLHttpRequest() // XMLHttpRequest 簡寫 xhr
+    // 放一個 function 到 onloda 上，當 request 拿到結果，就會觸發 onload 事件
+    // 可以想成幫 request 加一個 onload 的 eventListener
+    request.onload = function() {
+      // 因為結果會放置在 request 上，所以我可以針對 request 寫下列判斷
+      // 表 request 是成功的
+      if (request.status >= 200 && request.status <400) {
+        console.log(request.responseText)
+      } else {
+        console.log('err')
+      }
+    }
 
+    // 也可以幫 request 加另一個 listener onerror log 下有錯的狀況
+    request.onerror = function () {
+      console.log('error')
+    }
+    // open 的意思是：你要發request 到這個地方
+    // 第三個參數傳遞要否非同步，true 表示非同步
+    request.open('GET', 'https://google.com', true)
+    // 將 request 傳出
+    request.send()
   </script>
 </body>
 </html>
