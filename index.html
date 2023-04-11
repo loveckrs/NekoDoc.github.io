@@ -93,17 +93,17 @@
                     type: 'POST',
                     url: 'https://coupon.withhive.com/tp/coupon/use',
                     headers: {
-'Content-Type': 'application/json',
+'Content-Type' : 'application/json',
 'Page-Key': 'cSpyZDF7QHZvIylbWVRjfDc3MjkxNDIxNjFVcU4zVTgqYXUzQTxEMTQ4aiM=',
      'CT-Key': ''
                 },
-                    data: {
-                  "language":"zh-hant",
-"server":server,
-"cs_code":"cs_code",
-"coupon":tabledata[i]['code'],
-
-},
+                       data: {
+                        'server':server,
+                        'cs_code': cs_code,
+                        
+                        'coupon':tabledata[i]['code']
+                       
+                    },
                     success: function (data) {
                         if (data['resultCode'] === '成功') {
                             tabledata[i]['result'] = 1
