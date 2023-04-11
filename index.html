@@ -1,178 +1,408 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
-
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <title>魔靈召喚2一鍵兌換</title><!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=GTM-WH4M38Q"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'GTM-WH4M38Q');
-    </script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no" />
+    <title> Hive </title>
+    <meta property="og:title" content="Summoners War: Chronicles Coupon Exchange" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hive-fn.qpyou.cn/hubweb/gmnotice/appcenter/production/1667821751413.png" />
+    <meta property="og:url" content="http://coupon.withhive.com/771" />
+    <meta property="og:description" content="Summoners War: Chronicles Enter your Coupon Code." />
+    <link href="//hive-fn.qpyou.cn/markup/img/common/font/social/font_social.css" rel="stylesheet" type="text/css">
+    <link href="//hive-fn.qpyou.cn/hivecoupon/third_party/coupon.css?v=11" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="57x57" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/favicon-16x16.png">
+    <link rel="manifest" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/manifest.json">
+    <meta name="msapplication-config" content="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .not_show { display:none; }
+        .show { display:block; }
+    </style>
 </head>
-
 <body>
-    <p><span>*一鍵兌換 兌換碼*</span></p>
-    <p><br></p>
-    <p><span>CS Code : </span><input type="text" id="uid"></p>
-    <p>請選擇伺服器 : 
-  <select>
-      <option value ="伺服器1">費得海</option> <option value ="saab">阿里爾</option>
-       <option value="opel">Opel</option>
-        </select></p>
-<p><button onclick="req();">開始</button></p>
-<hr>
-  <p><span>[檢查/複製CS代碼的方法]</span></p>
-<p>1. 從主選單中選擇’設定’鈕。</p>
-<p>2. 在’設定-帳號’頁面中確認CS代碼。</p>
-<p>3. 使用"複製鈕"複製CS代碼。</p>
-    <hr>
-    <p><br></p>
-    <p><span>*編輯 兌換碼 !</span></p>
-    <p><span>可以直接通過網頁臨時添加兌換碼，點擊運行即可兌換。如果你想將它添加到數據庫, <a href="https://docs.google.com/spreadsheets/d/1sgR9JXTRieL60ULy37ban54KWX5EiVxT7BOMCpz4BPk/edit?usp=drivesdk" rel="noopener noreferrer" target="_blank">點擊這裡</a></span></p>
-    <p><br></p>
-    <div id="example-table"><br></div>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <p>
-        <link href="https://unpkg.com/tabulator-tables@4.1.4/dist/css/tabulator.min.css" rel="stylesheet">
-    </p>
-    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.1.4/dist/js/tabulator.min.js"></script>
+        <div id="HIVEcoupon">
+                <div class="header">
+            <h1 class="title">Coupon Exchange</h1>
+            <h2 class="game_title">Summoners War: Chronicles</h2>
+            <div class="game_img">
+                <img src="https://hive-fn.qpyou.cn/hubweb/gmnotice/appcenter/production/1667821751413.png" alt="Summoners War: Chronicles">
+            </div>
+        </div>
+        <div class="content">
+            <div class="form">
+                <div class="input_box server_list_area not_show">
+                    <div class="input_title">Game Server</div>
+                    <div class="select_wrap">
+                        <button type="button" class="btn_select">Select a game server.</button>
+                        <ul class="list_select"></ul>
+                    </div>
+                    <div class="err_div_svr error not_show">Select a game server.</div>
+                </div>
+                <div class="input_box">
+                    <label for="cs_code" class="input_title">CS Code</label>
+                    <input type="text" id="cs_code"  placeholder="Enter your CS Code." />
+                    <div class="err_div_cs error not_show">Enter your CS Code.</div>
+                </div>
+                <div class="input_box">
+                    <label for="coupon_code" class="input_title">Coupon Code</label>
+                    <input type="text" id="coupon_code" maxlength="50" placeholder="En0ter your Coupon Code." />
+                    <div class="err_div_coupon error not_show">Enter your Coupon Code.</div>
+                </div>
+                <button type="button" class="btn_use">Use Coupon</button>
+            </div>
+            <dl class="notice">
+                <dt>Please Read</dt>
+                                    <dd>The CS Code can be found in the game settings.</dd>
+                    <dd>Coupon rewards may be found in in-game Inbox and payment time may be delayed depending on network conditions.</dd>
+                    <dd>Coupons already used cannot be registered.</dd>
+                    <dd>Items delivered through coupons are not refundable or exchangeable.</dd>
+                    <dd>We are not responsible for any problems caused due to personal negligence.</dd>
+                            </dl>
+                        <a href="https://customer.withhive.com/com2us/ask/771" target="_blank" class="link_customer">Customer Support</a>
+            <p class="copyright">© Com2uS Platform Corp.</p>
+        </div>
+    </div>
+    <div class="pop_wrap coupon_lyr not_show">
+        <div class="pop_layer">
+            <div class="pop_container">
+                <div>
+                    <div class="pop_contents">
+                        <p id="layer_msg">Enter your Coupon Code.</p>
+                    </div>
+                    <div class="btns">
+                        <button type="button" class="btn_close" id="layer_close_btn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_wrap server coupon_server_lyr not_show">
+        <div class="pop_layer">
+            <div class="cs_code flex"></div>
+            <p class="desc server_lyr_desc">Select a server to claim the item.</p>
+            <ul class="pop_contents layer_server_list"></ul>
+            <div class="btns">
+                <button type="button" class="btn_confirm">Use Coupon</button>
+                <button type="button" class="btn_cancel">Close</button>
+            </div>
+        </div>
+    </div>
+
     <script>
-        function setCookie(cookie_name, value, days) {
-            var exdate = new Date();
-            exdate.setDate(exdate.getDate() + days);
-        
-            var cookie_value = escape(value) + ((days == null) ? '' : '; expires=' + exdate.toUTCString());
-            document.cookie = cookie_name + '=' + cookie_value;
-        }
-        
-        function getCookie(cookie_name) {
-            var x, y;
-            var val = document.cookie.split(';');
-        
-            for (var i = 0; i < val.length; i++) {
-                x = val[i].substr(0, val[i].indexOf('='));
-                y = val[i].substr(val[i].indexOf('=') + 1);
-                x = x.replace(/^\s+|\s+$/g, '');
-                if (x == cookie_name) {
-                    return unescape(y);
-                }
+        var gParam = {"gameInfo":{"game_id":"com.com2us.chroniclesus","gameindex":"771","default_lang":"en","icon_url":"https:\/\/hive-fn.qpyou.cn\/hubweb\/gmnotice\/appcenter\/production\/1667821751413.png","rep_url":"https:\/\/hive-fn.qpyou.cn\/hubweb\/gmnotice\/appcenter\/production\/1668480105446.jpg","game_name_ko":"Summoners War: Chronicles","game_name_en":"Summoners War: Chronicles","community_url":0,"community_web_coupon_exchange_use":0,"notice_custom_use":0,"game_server_api":"https:\/\/live-chroniclesuse-gameapi.qpyou.cn:24003\/coupon\/get_server_list","setting_idx":"301","company_middle_code_name":"com2us","game_name_current":"Summoners War: Chronicles"},"csCode":"","gameWorldList":[{"no":"22263","name":"EU","display_world_title_ko":"EU","display_world_title_en":"EU","revision":"3"},{"no":"22257","name":"JP","display_world_title_ko":"JP","display_world_title_en":"JP","revision":"3"},{"no":"22252","name":"SEA","display_world_title_ko":"SEA","display_world_title_en":"SEA","revision":"3"},{"no":"17959","name":"US","display_world_title_ko":"US\ub3d9\ubd80","display_world_title_en":"US\ub3d9\ubd80","revision":"3"},{"no":"19940","name":"US-2","display_world_title_ko":"US\uc11c\ubd80","display_world_title_en":"US\uc11c\ubd80","revision":"3"}],"serverApiUse":true,"language":"en","message":{"third_party_empty_cs_code":"Enter your CS Code.","third_party_empty_coupon":"Enter your Coupon Code.","coupon_page_confirm":"Enter","third_party_coupon_title":"Coupon Exchange","third_party_coupon_code":"Coupon Code","third_party_coupon_use":"Use Coupon","third_party_cs_code":"CS Code","third_party_contacts":"Customer Support","third_party_cs_code_only_number":"Only numbers can be entered.","third_party_game_server":"Game Server","third_party_select_game_server":"Select a game server.","third_party_select_game_server2":"Select a server to claim the item.","third_party_reenter_coupon_code":"Please enter the coupon code again.","third_party_get_game_server_info_error":"Unable to confirm the game server info.","third_party_get_request_server_error":"A temporary error has occurred.<br \/>Please try again later.","third_party_get_matched_cscode_not_found":"Unable to find the entered user info.<br \/>Please check the CS CODE again.","third_party_no_game_server":"No game servers.","third_party_notice":"Please Read","third_party_notice1":"The CS Code can be found in the game settings.","third_party_notice2":"Coupon rewards may be found in in-game Inbox and payment time may be delayed depending on network conditions.","third_party_notice3":"Coupons already used cannot be registered.","third_party_notice4":"Items delivered through coupons are not refundable or exchangeable.","third_party_notice5":"We are not responsible for any problems caused due to personal negligence.","third_party_notice1_walking_dead":"The CS Code can be found in the account tab of the profile on the top-left corner in the game.","third_party_close":"Close","third_party_community_title":"Community","third_party_move_community_to_session_expiry":"The session has expired. Going back to the community site.","third_party_invalid_connection":"Invalid connection.","third_party_automatically_move":"Will be moved automatically soon.","third_party_notice2_chronicles":"The reward is sent to the Inbox of the first server you access upon using the coupon.","third_party_notice3_chronicles":"The distributed reward will be kept in your Inbox for 7 days, and the deleted items cannot be recovered upon expiry.","third_party_success_chronicles":"The coupon has been used.<br \/>Please access the server you want to receive the reward from and check the Inbox!"},"noticeCustomUse":false,"notices":[]};
+        var rCode = 200;
+        var server = "";
+
+        const submitCoupon = async () => {
+            let request = {
+                'language': gParam.language,
+                'server': gParam.serverApiUse === false ? ($('.list_select > li.selected > button').val() ? $('.list_select > li.selected > button').val() : '') : ($("input[name='server']:checked").val() ? $("input[name='server']:checked").val() : ''),
+                'cs_code': $('#cs_code').val().trim().replace(/[^0-9]/g,''),
+                'coupon': $('#coupon_code').val().trim()
+            };
+
+            if(gParam.serverApiUse === true) {
+                const checkedServer = ($("input[name='server']:checked").val() === undefined) ? '' : ( $("input[name='server']:checked").val() ? $("input[name='server']:checked").val() : '' );
+                const targetServer = ($("input[name='server']:checked").val() === undefined) ? '' : ( $("input[name='server']:checked").val().split("|")[1] ? $("input[name='server']:checked").val().split("|")[1] : '' );
+                request.additional_info = (targetServer !== '' ? ($("input[name='additional_info_".concat(targetServer, '_', ( checkedServer.split("|")[2] ? checkedServer.split("|")[2] : '' ))+"']").val()) : '');
             }
-        
-            return null
-        }
-        
-        let uid = getCookie('uid')
-        
-        if (uid) { $('#uid').val(uid) }
-        var tabledata = [
-            { id: 1, code: "", result: 0, response: '', description: '要求' },
-            { id: 2, code: " ", result: 0, response: '', description: 'Request' },
-            { id: 3, code: "", result: 0, response: '', description: 'Request' },
-            { id: 4, code: "", result: 0, response: '', description: 'Request' },
-            { id: 5, code: "", result: 0, response: '', description: 'Request' },
-            { id: 6, code: "", result: 0, response: '', description: 'Request' },
-            { id: 7, code: "", result: 0, response: '', description: 'Request' },
-            { id: 8, code: "", result: 0, response: '', description: 'Request' },
-            { id: 9, code: "", result: 0, response: '', description: 'Request' },
-            { id: 10, code: "", result: 0, response: '', description: 'Request' },
-        ];
-        
-        function req() {
-            var uid = $('#uid').val()
-            setCookie('uid', uid)
-            for (var a in tabledata) {
-                let i = a
-                $.ajax({
-                    type: 'POST',
-                    url: 'https://couponview.netmarble.com/coupon/sk2gb/1461/apply',
-                    data: {
-                        'pid': uid,
-                        'channelCode': 100,
-                        'couponCode': tabledata[i]['code'],
-                        'worldId': '',
-                        'nickname': ''
-                    },
-                    success: function (data) {
-                        if (data['resultCode'] === '成功') {
-                            tabledata[i]['result'] = 1
-                            tabledata[i]['description'] = data['rewardItem']['rewardTitle']
-                        } else if (data['resultCode'] === 'NOT_EXISTS_PID') {
-                            tabledata[i]['description'] = '不存在的 CS Code'
-                        } else if (data['resultCode'] === 'COUPON_ALREADY_USE') {
-                            tabledata[i]['description'] = '兌換碼已使用'
-                        } else if (data['resultCode'] === 'COUPON_WRONG') {
-                            tabledata[i]['description'] = '兌換碼錯誤'
-        			} else if (data['resultCode'] === 'COUPON_RESTRICT') {
-                            tabledata[i]['description'] = '兌換碼限制,兌換碼失敗次數過多。請在在 1 小時後輸入.'
-                        } else {
-                            tabledata[i]['description'] = '未知的請求'
-                        }
-                        tabledata[i]['response'] = data['resultCode']
-                        table.updateData(tabledata)
-                    }
-                })
-            }
-        }
-        
-        google.charts.load('current', { packages: ['corechart'] }).then(function () {
-            var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1sgR9JXTRieL60ULy37ban54KWX5EiVxT7BOMCpz4BPk/gviz/tq?tqx=out:html&tq=SELECT+B&gid=2000340401');
-            
-            query.send(function (response) {
-                var dataTable = response.getDataTable();
-                var jsonData = dataTable.toJSON();
-                jsonData = JSON.parse(jsonData);
-                for (var i = 0; i < jsonData.rows.length; i++) {
-                    var htmlData = jsonData.rows[i].c[0].v;
-                    tabledata[i]['code'] = htmlData;
-                    table.updateData(tabledata);
-                }
-        
-            });
-        });
-        
-        var table = new Tabulator("#example-table", {
-            data: tabledata,          
-         //從數組中加載行數據
-            reactiveData: true,
-            layout: "fitColumns",  
-         //使列適合表格的寬度
-            responsiveLayout: "hide", 
-         //隱藏不適合表格的列
-            tooltips: true,   
-         //在單元格上顯示工具提示
-            addRowPos: "top",   
-         //添加新行時，將其添加到表格的頂部
-            history: true, 
-         //允許對錶進行撤消和重做操作
-            movableColumns: true, 
-         //允許更改列順序
-            resizableRows: true, 
-         //允許更改行順序
-            columns: [                 
-         //定義表列
-  { title: "No", field: "id", width: 70, editor: false },
-  { title: "兌換碼", field: "code", width: 100, editor: "input" },
-                {
-                    title: "狀態",
-                    field: "result",
-                    width: 90,
-                    hozAlign: "center",
-                    formatter: "tickCross",
-                    sorter: "boolean",
-                    editor: false
+
+            const response = await fetch('/tp/coupon/use', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Page-Key': 'ZmMpWTplVEZNbCpsZjlRfDc3MTY3MDIxNjFoSV81eVddc1g3NlNtMTk4KiQ=',
+                    'CT-Key': '',
                 },
-                { title: "結果", field: "response", width: 90, editor: false },
-                { title: "描述", field: "description", editor: false },
-            ],
-        });
+                body: JSON.stringify(request),
+            });
+            if (! response.ok) {
+                const message = `An error has occurred: ${response.status} ${response.statusText}`;
+                throw new Error(message);
+            }
+            return await response.json();
+        }
+
+        const getServerList = async () => {
+            // if exist server info, processed to submitCoupon.
+            const request = {
+                'language': gParam.language,
+                'server': server,
+                'cs_code': $('#cs_code').val().trim().replace(/[^0-9]/g,''),
+            }
+
+            const response = await fetch('/tp/coupon/server_list', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Page-Key': 'ZmMpWTplVEZNbCpsZjlRfDc3MTY3MDIxNjFoSV81eVddc1g3NlNtMTk4KiQ=',
+                    'CT-Key': '',
+                },
+                body: JSON.stringify(request),
+            });
+            if (! response.ok) {
+                const message = `An error has occurred: ${response.status} ${response.statusText}`;
+                throw new Error(message);
+            }
+            return await response.json();
+        }
+
+        function showMessageLayer(message, code = null) {
+            if(code != null) rCode = Number(code);
+            $('.coupon_lyr').removeClass('not_show');
+            $('#layer_msg').html(message);
+        }
+
+        function showServerListLayer(res) {
+            if(res.code != null && res.code !== 100) {
+                showMessageLayer(res.message, res.code);
+            } else {
+                $('.server_lyr_desc').attr({ style: 'color: #627793' });
+                $(".coupon_server_lyr > .pop_layer > .cs_code").html($('#cs_code').val().trim());
+                if(res.serverList.length > 0) {
+                    // reset server list
+                    $('.layer_server_list').html('');
+
+                    let count = 1;
+                    let extraDisplay = res.extraDisplay;
+
+                    res.serverList.forEach((e) => {
+                        let li = document.createElement('li');
+                        let inpNode = document.createElement('input');
+                        let inpNode2 = document.createElement('input');
+                        let serverDisplayName = (e['server_display_names'][gParam.language]) ? e['server_display_names'][gParam.language] : e['server_display_names'][res.defaultLang];
+                        let extraValues = extraDisplay > -1 ? ' - '.concat(e['additionalinfoValue']) : "";
+                        let labelNode = document.createElement('label');
+                        let spanNode = document.createElement('span');
+                        let btnText = document.createTextNode(serverDisplayName.concat(extraValues));
+
+                        $(inpNode).attr({ type: 'radio', id: 'server_'.concat(e['server_id'], '_', count), name: 'server', class: 'input_check', value: gParam.gameInfo['gameindex'].concat('|', e['server_id'], '|', count, '|', serverDisplayName) });
+                        $(inpNode2).attr({ type: 'hidden', id: 'additional_info_'.concat(e['server_id'], '_', count), name:'additional_info_'.concat(e['server_id'], '_', count), value: e['additionalinfo']});
+                        $(labelNode).attr({ for: 'server_'.concat(e['server_id'], '_', count), class: 'label_check' });
+                        $(labelNode).append(spanNode);
+                        $(spanNode).append(btnText);
+                        $(li).attr({ class: 'check' });
+                        $(li).append(inpNode);
+                        $(li).append(labelNode);
+                        $(li).append(inpNode2);
+                        count++;
+
+                        $('.layer_server_list').append(li);
+                    });
+
+                    $('.coupon_server_lyr').removeClass('not_show');
+                } else {
+                    showMessageLayer(gParam.message.third_party_get_matched_cscode_not_found, 394);
+                }
+            }
+        }
+
+        $(document).ready(function () {
+            const couponMin = 4;
+            const couponMax = 30;
+            const dropdown = $('.list_select');
+            const displayDefaultLang = (gParam.language !== 'en' && gParam.language !== 'ko') ? 'en' : gParam.language;
+            const gameWorldList = gParam.gameWorldList;
+            const serverApiUse = gParam.serverApiUse;
+
+            // check the server api using
+            if(serverApiUse === false) {
+                // select area option create
+                if(gameWorldList != null && gameWorldList.length > 0) {
+                    gameWorldList.forEach((e) => {
+                        let li = document.createElement('li');
+                        let btnNode = document.createElement('button');
+                        let btnText = document.createTextNode(e['display_world_title_'+displayDefaultLang]);
+
+                        $(btnNode).attr({ type: 'button', value: gParam.gameInfo['gameindex'].concat('|', e['name'], '|', e['display_world_title_'+displayDefaultLang]) });
+                        $(btnNode).append(btnText);
+                        $(li).append(btnNode);
+
+                        dropdown.append(li);
+                    });
+                } else {
+                    let li = document.createElement('li');
+                    let btnNode = document.createElement('button');
+                    let btnText = document.createTextNode(gParam.message.third_party_no_game_server);
+
+                    $(btnNode).attr({ type: 'button', value: ''});
+                    $(btnNode).append(btnText);
+                    $(li).append(btnNode);
+
+                    dropdown.append(li);
+                }
+            }
+
+            $('.btn_select').on('click', function(e) {
+                e.preventDefault();
+                $(this).siblings().addClass("on");
+            });
+
+            // select area click check
+            $('.list_select').click((e) => {
+                // remove before selected class, if exist
+                $('.list_select > li').siblings().removeClass("selected");
+
+                const targetValue = e.target.value;
+                if(targetValue !== undefined && targetValue.split('|')[2] != null) {
+                    $(e.target).parent().addClass("selected");
+                    $('.btn_select').text(targetValue.split('|')[2]);
+                    $('.err_div_svr').addClass("not_show");
+                }
+            });
+
+            // check the click for outbound select area
+            $('html').click((e) => {
+                if (!$(e.target).hasClass('btn_select') && !$(e.target).hasClass('dropdown')) {
+                    dropdown.removeClass('on');
+                }
+            });
+
+            // cs code check
+            $('#cs_code').on('input propertychange', function(e) {
+                $('.err_div_cs').text(gParam.message.third_party_empty_cs_code);
+
+                if(this.value.trim() === '') {
+                    $('.err_div_cs').removeClass('not_show');
+                } else {
+                    $('.err_div_cs').addClass('not_show');
+                }
+            });
+
+            // coupon check
+            $('#coupon_code').on('input propertychange', function(e) {
+                if(this.value.trim() === '') {
+                    $('.err_div_coupon').removeClass('not_show');
+                } else {
+                    let _coupon = $('#coupon_code').val().trim();
+                    if (_coupon.length < couponMin || _coupon.length > couponMax ) {
+                        $('.err_div_coupon').removeClass('not_show');
+                    } else {
+                        $('.err_div_coupon').addClass('not_show');
+                    }
+                }
+
+                this.value = this.value.toUpperCase();
+            });
+
+            $('.btn_use').click((e) => {
+                server = $('.list_select > li.selected > button').val() ? $('.list_select > li.selected > button').val() : '';
+                let coupon = $('#coupon_code').val().trim();
+                let csCode = $('#cs_code').val().trim();
+                let numRegex = /^[0-9]*$/
+
+                if(serverApiUse === true) {
+                    // set default data
+                    server = gParam.gameInfo['gameindex'].concat('|', 'USE_API');
+                }
+
+                if(isNaN(csCode) || !numRegex.test(csCode)) {
+                    $('.err_div_cs').text(gParam.message.third_party_cs_code_only_number);
+                    $('.err_div_cs').removeClass('not_show');
+                    return;
+                }
+
+                if (server === '' || $('.btn_select').text() === gParam.message.third_party_select_game_server) {
+                    $('.err_div_svr').removeClass('not_show');
+                }
+
+                if(csCode === '') {
+                    $('.err_div_cs').text(gParam.message.third_party_empty_cs_code);
+                    $('.err_div_cs').removeClass('not_show');
+                }
+
+                if(coupon === '') {
+                    $('.err_div_coupon').removeClass('not_show');
+                }
+
+                if(server === '' || csCode === '' || coupon === '') {
+                    return;
+                }
+
+                if (coupon.length < couponMin || coupon.length > couponMax ) {
+                    return;
+                }
+
+                $('.btn_use').attr('disabled', 'disabled'); // multiple click prevent
+                if(serverApiUse === true) {
+                    getServerList().then(response => showServerListLayer(response)).catch(error => alert(error.message));
+                } else {
+                    submitCoupon().then(response => showMessageLayer(response.msg, response.code)).catch(error => alert(error.message));
+                }
+            });
+
+            $('.btn_confirm').click((e) => {
+                let server_confirm = $("input[name='server']:checked").val() ? $("input[name='server']:checked").val() : '';
+                let coupon = $('#coupon_code').val().trim();
+                let csCode = $('#cs_code').val().trim();
+                let numRegex = /^[0-9]*$/
+
+                if (server_confirm === '') {
+                    $('.server_lyr_desc').attr({ style: 'color: #e21212' });
+                    return;
+                }
+
+                $('.coupon_server_lyr').addClass('not_show');
+                $('.btn_use').attr('disabled', 'disabled'); // multiple click prevent
+                submitCoupon().then(response => showMessageLayer(response.msg, response.code)).catch(error => alert(error.message));
+            });
+
+            // layer popup setting
+            $('.btn_close').click((e) => {
+                $('.btn_use').removeAttr('disabled'); // multiple click prevent
+
+                switch (rCode) {
+                    case 399:
+                        let _nowTime = new Date().getTime();
+                        // When code 399 is returned in webview, timestamp value is added on the current url due to DSA cache problem.
+                        if(window.location.href !== "") {
+                            window.location.href = (window.location.search !== "" ?
+                                window.location.href.replace(window.location.search, "").concat("?t=", _nowTime.toString()) :
+                                window.location.href.concat("?t=", _nowTime.toString()));
+                        } else {
+                            window.location.href = "/771/en";
+                        }
+                        break;
+                    case 393:
+                    case 392:
+                        window.location.href = "0";
+                        break;
+                    case 390:
+                    case 391:
+                        window.location.href = "/771/en";
+                        break;
+                    default:
+                        $('.coupon_lyr').addClass('not_show');
+                        break;
+                }
+            });
+
+            $('.btn_cancel').click((e) => {
+                $('.coupon_server_lyr').addClass('not_show');
+                $('.btn_use').removeAttr('disabled');
+            });
+
+            // verify check
+                    });
     </script>
-
-<div style="color: red">Created with <a href="https://wordtohtml.net/">WordToHTML.net</a> trial.</div>
 </body>
-
 </html>
