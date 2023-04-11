@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="zh-hant" >
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -7,11 +8,11 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta name="format-detection" content="telephone=no" />
     <title> Hive </title>
-    <meta property="og:title" content="Summoners War: Chronicles Coupon Exchange" />
+    <meta property="og:title" content="Summoners War: Chronicles 優惠券兌換所" />
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://hive-fn.qpyou.cn/hubweb/gmnotice/appcenter/production/1667821751413.png" />
     <meta property="og:url" content="http://coupon.withhive.com/771" />
-    <meta property="og:description" content="Summoners War: Chronicles Enter your Coupon Code." />
+    <meta property="og:description" content="Summoners War: Chronicles 請輸入優惠券序號。" />
     <link href="//hive-fn.qpyou.cn/markup/img/common/font/social/font_social.css" rel="stylesheet" type="text/css">
     <link href="//hive-fn.qpyou.cn/hivecoupon/third_party/coupon.css?v=11" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="57x57" href="//hive-fn.qpyou.cn/hubweb/hub/hubweb/favicon/v3/apple-icon-57x57.png">
@@ -41,7 +42,7 @@
 <body>
         <div id="HIVEcoupon">
                 <div class="header">
-            <h1 class="title">Coupon Exchange</h1>
+            <h1 class="title">優惠券兌換所</h1>
             <h2 class="game_title">Summoners War: Chronicles</h2>
             <div class="game_img">
                 <img src="https://hive-fn.qpyou.cn/hubweb/gmnotice/appcenter/production/1667821751413.png" alt="Summoners War: Chronicles">
@@ -50,34 +51,34 @@
         <div class="content">
             <div class="form">
                 <div class="input_box server_list_area not_show">
-                    <div class="input_title">Game Server</div>
+                    <div class="input_title">遊戲伺服器</div>
                     <div class="select_wrap">
-                        <button type="button" class="btn_select">Select a game server.</button>
+                        <button type="button" class="btn_select">請選擇遊戲伺服器。</button>
                         <ul class="list_select"></ul>
                     </div>
-                    <div class="err_div_svr error not_show">Select a game server.</div>
+                    <div class="err_div_svr error not_show">請選擇遊戲伺服器。</div>
                 </div>
                 <div class="input_box">
                     <label for="cs_code" class="input_title">CS Code</label>
-                    <input type="text" id="cs_code"  placeholder="Enter your CS Code." />
-                    <div class="err_div_cs error not_show">Enter your CS Code.</div>
+                    <input type="text" id="cs_code"  placeholder="請輸入CS Code。" />
+                    <div class="err_div_cs error not_show">請輸入CS Code。</div>
                 </div>
                 <div class="input_box">
-                    <label for="coupon_code" class="input_title">Coupon Code</label>
-                    <input type="text" id="coupon_code" maxlength="50" placeholder="En0ter your Coupon Code." />
-                    <div class="err_div_coupon error not_show">Enter your Coupon Code.</div>
+                    <label for="coupon_code" class="input_title">優惠券序號</label>
+                    <input type="text" id="coupon_code" maxlength="50" placeholder="請輸入優惠券序號。" />
+                    <div class="err_div_coupon error not_show">請輸入優惠券序號。</div>
                 </div>
-                <button type="button" class="btn_use">Use Coupon</button>
+                <button type="button" class="btn_use">使用優惠券</button>
             </div>
             <dl class="notice">
-                <dt>Please Read</dt>
-                                    <dd>The CS Code can be found in the game settings.</dd>
-                    <dd>Coupon rewards may be found in in-game Inbox and payment time may be delayed depending on network conditions.</dd>
-                    <dd>Coupons already used cannot be registered.</dd>
-                    <dd>Items delivered through coupons are not refundable or exchangeable.</dd>
-                    <dd>We are not responsible for any problems caused due to personal negligence.</dd>
+                <dt>注意事項</dt>
+                                    <dd>CS Code可至遊戲的設定中確認。</dd>
+                    <dd>優惠券獎勵可在遊戲收件箱中領取。根據網路連線狀況，可能會出現延遲發送的狀況。</dd>
+                    <dd>無法登錄已使用過的優惠券。</dd>
+                    <dd>使用優惠券獲得的道具，無法退款或交換。</dd>
+                    <dd>由於個人不當操作而發生的問題，將不予以負責。</dd>
                             </dl>
-                        <a href="https://customer.withhive.com/com2us/ask/771" target="_blank" class="link_customer">Customer Support</a>
+                        <a href="https://customer.withhive.com/com2us/ask/771" target="_blank" class="link_customer">客服中心</a>
             <p class="copyright">© Com2uS Platform Corp.</p>
         </div>
     </div>
@@ -86,10 +87,10 @@
             <div class="pop_container">
                 <div>
                     <div class="pop_contents">
-                        <p id="layer_msg">Enter your Coupon Code.</p>
+                        <p id="layer_msg">請輸入優惠券序號。</p>
                     </div>
                     <div class="btns">
-                        <button type="button" class="btn_close" id="layer_close_btn">Close</button>
+                        <button type="button" class="btn_close" id="layer_close_btn">關閉</button>
                     </div>
                 </div>
             </div>
@@ -98,17 +99,17 @@
     <div class="pop_wrap server coupon_server_lyr not_show">
         <div class="pop_layer">
             <div class="cs_code flex"></div>
-            <p class="desc server_lyr_desc">Select a server to claim the item.</p>
+            <p class="desc server_lyr_desc">請選擇欲領取道具的伺服器。</p>
             <ul class="pop_contents layer_server_list"></ul>
             <div class="btns">
-                <button type="button" class="btn_confirm">Use Coupon</button>
-                <button type="button" class="btn_cancel">Close</button>
+                <button type="button" class="btn_confirm">使用優惠券</button>
+                <button type="button" class="btn_cancel">關閉</button>
             </div>
         </div>
     </div>
 
     <script>
-        var gParam = {"gameInfo":{"game_id":"com.com2us.chroniclesus","gameindex":"771","default_lang":"en","icon_url":"https:\/\/hive-fn.qpyou.cn\/hubweb\/gmnotice\/appcenter\/production\/1667821751413.png","rep_url":"https:\/\/hive-fn.qpyou.cn\/hubweb\/gmnotice\/appcenter\/production\/1668480105446.jpg","game_name_ko":"Summoners War: Chronicles","game_name_en":"Summoners War: Chronicles","community_url":0,"community_web_coupon_exchange_use":0,"notice_custom_use":0,"game_server_api":"https:\/\/live-chroniclesuse-gameapi.qpyou.cn:24003\/coupon\/get_server_list","setting_idx":"301","company_middle_code_name":"com2us","game_name_current":"Summoners War: Chronicles"},"csCode":"","gameWorldList":[{"no":"22263","name":"EU","display_world_title_ko":"EU","display_world_title_en":"EU","revision":"3"},{"no":"22257","name":"JP","display_world_title_ko":"JP","display_world_title_en":"JP","revision":"3"},{"no":"22252","name":"SEA","display_world_title_ko":"SEA","display_world_title_en":"SEA","revision":"3"},{"no":"17959","name":"US","display_world_title_ko":"US\ub3d9\ubd80","display_world_title_en":"US\ub3d9\ubd80","revision":"3"},{"no":"19940","name":"US-2","display_world_title_ko":"US\uc11c\ubd80","display_world_title_en":"US\uc11c\ubd80","revision":"3"}],"serverApiUse":true,"language":"en","message":{"third_party_empty_cs_code":"Enter your CS Code.","third_party_empty_coupon":"Enter your Coupon Code.","coupon_page_confirm":"Enter","third_party_coupon_title":"Coupon Exchange","third_party_coupon_code":"Coupon Code","third_party_coupon_use":"Use Coupon","third_party_cs_code":"CS Code","third_party_contacts":"Customer Support","third_party_cs_code_only_number":"Only numbers can be entered.","third_party_game_server":"Game Server","third_party_select_game_server":"Select a game server.","third_party_select_game_server2":"Select a server to claim the item.","third_party_reenter_coupon_code":"Please enter the coupon code again.","third_party_get_game_server_info_error":"Unable to confirm the game server info.","third_party_get_request_server_error":"A temporary error has occurred.<br \/>Please try again later.","third_party_get_matched_cscode_not_found":"Unable to find the entered user info.<br \/>Please check the CS CODE again.","third_party_no_game_server":"No game servers.","third_party_notice":"Please Read","third_party_notice1":"The CS Code can be found in the game settings.","third_party_notice2":"Coupon rewards may be found in in-game Inbox and payment time may be delayed depending on network conditions.","third_party_notice3":"Coupons already used cannot be registered.","third_party_notice4":"Items delivered through coupons are not refundable or exchangeable.","third_party_notice5":"We are not responsible for any problems caused due to personal negligence.","third_party_notice1_walking_dead":"The CS Code can be found in the account tab of the profile on the top-left corner in the game.","third_party_close":"Close","third_party_community_title":"Community","third_party_move_community_to_session_expiry":"The session has expired. Going back to the community site.","third_party_invalid_connection":"Invalid connection.","third_party_automatically_move":"Will be moved automatically soon.","third_party_notice2_chronicles":"The reward is sent to the Inbox of the first server you access upon using the coupon.","third_party_notice3_chronicles":"The distributed reward will be kept in your Inbox for 7 days, and the deleted items cannot be recovered upon expiry.","third_party_success_chronicles":"The coupon has been used.<br \/>Please access the server you want to receive the reward from and check the Inbox!"},"noticeCustomUse":false,"notices":[]};
+        var gParam = {"gameInfo":{"game_id":"com.com2us.chroniclesus","gameindex":"771","default_lang":"en","icon_url":"https:\/\/hive-fn.qpyou.cn\/hubweb\/gmnotice\/appcenter\/production\/1667821751413.png","rep_url":"https:\/\/hive-fn.qpyou.cn\/hubweb\/gmnotice\/appcenter\/production\/1668480105446.jpg","game_name_ko":"Summoners War: Chronicles","game_name_en":"Summoners War: Chronicles","community_url":0,"community_web_coupon_exchange_use":0,"notice_custom_use":0,"game_server_api":"https:\/\/live-chroniclesuse-gameapi.qpyou.cn:24003\/coupon\/get_server_list","setting_idx":"301","company_middle_code_name":"com2us","game_name_current":"Summoners War: Chronicles"},"csCode":"","gameWorldList":[{"no":"22263","name":"EU","display_world_title_ko":"EU","display_world_title_en":"EU","revision":"3"},{"no":"22257","name":"JP","display_world_title_ko":"JP","display_world_title_en":"JP","revision":"3"},{"no":"22252","name":"SEA","display_world_title_ko":"SEA","display_world_title_en":"SEA","revision":"3"},{"no":"17959","name":"US","display_world_title_ko":"US\ub3d9\ubd80","display_world_title_en":"US\ub3d9\ubd80","revision":"3"},{"no":"19940","name":"US-2","display_world_title_ko":"US\uc11c\ubd80","display_world_title_en":"US\uc11c\ubd80","revision":"3"}],"serverApiUse":true,"language":"zh-hant","message":{"third_party_empty_cs_code":"\u8acb\u8f38\u5165CS Code\u3002","third_party_empty_coupon":"\u8acb\u8f38\u5165\u512a\u60e0\u5238\u5e8f\u865f\u3002","coupon_page_confirm":"\u78ba\u8a8d","third_party_coupon_title":"\u512a\u60e0\u5238\u514c\u63db\u6240","third_party_coupon_code":"\u512a\u60e0\u5238\u5e8f\u865f","third_party_coupon_use":"\u4f7f\u7528\u512a\u60e0\u5238","third_party_cs_code":"CS Code","third_party_contacts":"\u5ba2\u670d\u4e2d\u5fc3","third_party_cs_code_only_number":"\u50c5\u9650\u8f38\u5165\u6578\u5b57\u3002","third_party_game_server":"\u904a\u6232\u4f3a\u670d\u5668","third_party_select_game_server":"\u8acb\u9078\u64c7\u904a\u6232\u4f3a\u670d\u5668\u3002","third_party_select_game_server2":"\u8acb\u9078\u64c7\u6b32\u9818\u53d6\u9053\u5177\u7684\u4f3a\u670d\u5668\u3002","third_party_reenter_coupon_code":"\u8acb\u91cd\u65b0\u8f38\u5165\u512a\u60e0\u5238\u5e8f\u865f\u3002","third_party_get_game_server_info_error":"\u7121\u6cd5\u78ba\u8a8d\u904a\u6232\u4f3a\u670d\u5668\u8cc7\u8a0a\u3002","third_party_get_request_server_error":"\u767c\u751f\u66ab\u6642\u6027\u932f\u8aa4\u3002<br \/>\u8acb\u7a0d\u5f8c\u518d\u8a66\u3002","third_party_get_matched_cscode_not_found":"\u627e\u4e0d\u5230\u8a72\u73a9\u5bb6\u8cc7\u8a0a\u3002<br \/>\u8acb\u91cd\u65b0\u78ba\u8a8dCS CODE\u5f8c\u518d\u8a66\u3002","third_party_no_game_server":"\u7121\u904a\u6232\u4f3a\u670d\u5668\u3002","third_party_notice":"\u6ce8\u610f\u4e8b\u9805","third_party_notice1":"CS Code\u53ef\u81f3\u904a\u6232\u7684\u8a2d\u5b9a\u4e2d\u78ba\u8a8d\u3002","third_party_notice2":"\u512a\u60e0\u5238\u734e\u52f5\u53ef\u5728\u904a\u6232\u6536\u4ef6\u7bb1\u4e2d\u9818\u53d6\u3002\u6839\u64da\u7db2\u8def\u9023\u7dda\u72c0\u6cc1\uff0c\u53ef\u80fd\u6703\u51fa\u73fe\u5ef6\u9072\u767c\u9001\u7684\u72c0\u6cc1\u3002","third_party_notice3":"\u7121\u6cd5\u767b\u9304\u5df2\u4f7f\u7528\u904e\u7684\u512a\u60e0\u5238\u3002","third_party_notice4":"\u4f7f\u7528\u512a\u60e0\u5238\u7372\u5f97\u7684\u9053\u5177\uff0c\u7121\u6cd5\u9000\u6b3e\u6216\u4ea4\u63db\u3002","third_party_notice5":"\u7531\u65bc\u500b\u4eba\u4e0d\u7576\u64cd\u4f5c\u800c\u767c\u751f\u7684\u554f\u984c\uff0c\u5c07\u4e0d\u4e88\u4ee5\u8ca0\u8cac\u3002","third_party_notice1_walking_dead":"CS Code\u53ef\u81f3\u904a\u6232\u5167\u5de6\u4e0a\u65b9\u7684\u982d\u50cf \uff1e \u5e33\u865f\u5206\u9801\u4e2d\u78ba\u8a8d\u3002","third_party_close":"\u95dc\u9589","third_party_community_title":"\u793e\u7fa4","third_party_move_community_to_session_expiry":"\u9023\u7dda\u5df2\u5931\u6548\uff0c\u5373\u5c07\u8fd4\u56de\u793e\u7fa4\u7db2\u7ad9\u3002","third_party_invalid_connection":"\u9023\u7dda\u932f\u8aa4\u3002","third_party_automatically_move":"\u7a0d\u5f8c\u5c07\u81ea\u52d5\u79fb\u52d5\u3002","third_party_notice2_chronicles":"\u4f7f\u7528\u512a\u60e0\u5238\u6642\uff0c\u734e\u52f5\u5c07\u767c\u9001\u81f3\u9996\u6b21\u767b\u5165\u7684\u4f3a\u670d\u5668\u6536\u4ef6\u7bb1\u4e2d\u3002","third_party_notice3_chronicles":"\u767c\u9001\u81f3\u6536\u4ef6\u7bb1\u7684\u734e\u52f5\u5c07\u6703\u4fdd\u7ba17\u5929\uff0c\u8d85\u904e\u671f\u9650\u5247\u6703\u81ea\u52d5\u522a\u9664\u7121\u6cd5\u6062\u5fa9\u3002","third_party_success_chronicles":"\u8a72\u512a\u60e0\u5238\u5df2\u4f7f\u7528\u5b8c\u7562\u3002<br \/>\u9032\u5165\u904a\u6232\u5f8c\u9078\u64c7\u6b32\u9818\u53d6\u734e\u52f5\u7684\u4f3a\u670d\u5668\uff0c\u4e26\u81f3\u6536\u4ef6\u7bb1\u9818\u53d6\uff01"},"noticeCustomUse":false,"notices":[]};
         var rCode = 200;
         var server = "";
 
@@ -130,7 +131,7 @@
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Page-Key': 'ZmMpWTplVEZNbCpsZjlRfDc3MTY3MDIxNjFoSV81eVddc1g3NlNtMTk4KiQ=',
+                    'Page-Key': 'ajllZXAkakZsREQiSlJOfDc3NTUwMjIxNjFTVz1xYlVTWWdFS08wMTA4a0c=',
                     'CT-Key': '',
                 },
                 body: JSON.stringify(request),
@@ -154,7 +155,7 @@
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Page-Key': 'ZmMpWTplVEZNbCpsZjlRfDc3MTY3MDIxNjFoSV81eVddc1g3NlNtMTk4KiQ=',
+                    'Page-Key': 'ajllZXAkakZsREQiSlJOfDc3NTUwMjIxNjFTVz1xYlVTWWdFS08wMTA4a0c=',
                     'CT-Key': '',
                 },
                 body: JSON.stringify(request),
@@ -379,7 +380,7 @@
                                 window.location.href.replace(window.location.search, "").concat("?t=", _nowTime.toString()) :
                                 window.location.href.concat("?t=", _nowTime.toString()));
                         } else {
-                            window.location.href = "/771/en";
+                            window.location.href = "/771/zh-hant";
                         }
                         break;
                     case 393:
@@ -388,7 +389,7 @@
                         break;
                     case 390:
                     case 391:
-                        window.location.href = "/771/en";
+                        window.location.href = "/771/zh-hant";
                         break;
                     default:
                         $('.coupon_lyr').addClass('not_show');
