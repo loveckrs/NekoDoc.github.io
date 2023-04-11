@@ -70,7 +70,7 @@
         
         if (uid) { $('#uid').val(uid) }
         var tabledata = [
-            { id: 1, code: "", result: 0, response: '', description: 'Request' },
+            { id: 1, code: "", result: 0, response: '', description: '要求' },
             { id: 2, code: " ", result: 0, response: '', description: 'Request' },
             { id: 3, code: "", result: 0, response: '', description: 'Request' },
             { id: 4, code: "", result: 0, response: '', description: 'Request' },
@@ -98,19 +98,19 @@
                         'nickname': ''
                     },
                     success: function (data) {
-                        if (data['resultCode'] === 'SUCCESS') {
+                        if (data['resultCode'] === '成功') {
                             tabledata[i]['result'] = 1
                             tabledata[i]['description'] = data['rewardItem']['rewardTitle']
                         } else if (data['resultCode'] === 'NOT_EXISTS_PID') {
-                            tabledata[i]['description'] = 'NOT EXISTS UID'
+                            tabledata[i]['description'] = '不存在的 CS Code'
                         } else if (data['resultCode'] === 'COUPON_ALREADY_USE') {
-                            tabledata[i]['description'] = 'COUPON ALREADY USE'
+                            tabledata[i]['description'] = '兌換碼已使用'
                         } else if (data['resultCode'] === 'COUPON_WRONG') {
-                            tabledata[i]['description'] = 'COUPON WRONG'
+                            tabledata[i]['description'] = '兌換碼錯誤'
         			} else if (data['resultCode'] === 'COUPON_RESTRICT') {
-                            tabledata[i]['description'] = 'COUPON RESTRICT. COUPON ENTRIES FAILED SUCCESSIVELY. CAN BE ENTERED AFTER 1 HOUR.'
+                            tabledata[i]['description'] = '兌換碼限制,兌換碼失敗次數過多。請在在 1 小時後輸入.'
                         } else {
-                            tabledata[i]['description'] = 'UNKNOWN RESPONSE'
+                            tabledata[i]['description'] = '未知的請求'
                         }
                         tabledata[i]['response'] = data['resultCode']
                         table.updateData(tabledata)
@@ -159,15 +159,15 @@
   { title: "兌換碼", field: "code", width: 100, editor: "input" },
                 {
                     title: "狀態",
-                    field: "結果",
+                    field: "result",
                     width: 90,
                     hozAlign: "center",
                     formatter: "tickCross",
                     sorter: "boolean",
                     editor: false
                 },
-                { title: "Response", field: "response", width: 180, editor: false },
-                { title: "Description", field: "description", editor: false },
+                { title: "結果", field: "response", width: 180, editor: false },
+                { title: "描述", field: "description", editor: false },
             ],
         });
     </script>
