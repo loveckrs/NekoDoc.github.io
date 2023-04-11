@@ -87,30 +87,30 @@
             var server = $('#server').val()
             setCookie('cs_code', cs_code)
             setCookie('server', server)
+            var ggs = {"language":"zh-hant",
+"server":"771|SEA|5|全球伺服器 - 亞洲 - 阿里爾",
+"cs_code":"66666688666",
+"coupon":"ENCHANTGOUP"
+}
+
             for (var a in tabledata) {
                 let i = a
                 $.ajax({
-                    type: 'POST',
-                    url: 'https://coupon.withhive.com/tp/coupon/use',
-                    headers: {
-'Content-Type' : 'application/json',
-'Page-Key': 'cSpyZDF7QHZvIylbWVRjfDc3MjkxNDIxNjFVcU4zVTgqYXUzQTxEMTQ4aiM=',
-     'CT-Key': ''
+                    method: 'POST',
+                    url:"https://coupon.withhive.com/tp/coupon/use",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Page-Key': 'ZmMpWTplVEZNbCpsZjlRfDc3MTY3MDIxNjFoSV81eVddc1g3NlNtMTk4KiQ=',
+                    'CT-Key': '',
                 },
-                       data: {
-                        'server':server,
-                        'cs_code': cs_code,
-                        
-                        'coupon':tabledata[i]['code']
-                       
-                    },
-                    success: function (data) {
-                        if (data['resultCode'] === '成功') {
+                'json':ggs,
+                    success: function (ggs) {
+                        if (ggs['resultCode'] === '成功') {
                             tabledata[i]['result'] = 1
                             tabledata[i]['description'] = data['rewardItem']['rewardTitle']
-                        } else if (data['resultCode'] === 'NOT_EXISTS_PID') {
+                        } else if (ggs['resultCode'] === 'NOT_EXISTS_PID') {
                             tabledata[i]['description'] = '不存在的 CS Code'
-                        } else if (data['resultCode'] === 'COUPON_ALREADY_USE') {
+                        } else if (ggs['resultCode'] === 'COUPON_ALREADY_USE') {
                             tabledata[i]['description'] = '兌換碼已使用'
                         } else if (data['resultCode'] === 'COUPON_WRONG') {
                             tabledata[i]['description'] = '兌換碼錯誤'
@@ -121,7 +121,8 @@
                         }
                         tabledata[i]['response'] = data['resultCode']
                         table.updateData(tabledata)
-                    }
+                    } 
+
                 })
             }
         }
