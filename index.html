@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
-<title>love_xl</title>
+<title>[致逝去的愛]</title>
 <link href="favicon.ico" rel="shortcut icon" />
+
 <style>
 body{
   overflow: hidden;
@@ -12,18 +13,18 @@ body{
 }
 h1{
   position: fixed;
-  top: 50%;
-  left: 0;
-  width: 100%;
+  top: 45%;
+  left: 0%;
+  width: device-width;
   text-align: center;
   transform:translateY(-50%);
   font-family: 'Love Ya Like A Sister', cursive;
-  font-size: 40px;
-  color: #c70012;
+  font-size: 20px;
+  color: #000000;
   padding: 0 20px;
 }
 h1 span{
-    font-size:20px;
+    font-size:10px;
 }
 </style>
 
@@ -33,6 +34,7 @@ h1 span{
 <canvas></canvas> 
 
 <script>
+    /*
 var canvas = document.querySelector("canvas"),
   ctx = canvas.getContext("2d");
 
@@ -125,24 +127,33 @@ window.addEventListener("mousemove", onMove);
 window.addEventListener("touchmove", onMove);
 window.addEventListener("resize", onResize);
 requestAnimationFrame(render);
-
+*/
 window.onload=function starttime(){
-        time(h1,'2017/3/15');                           // 在一起的时间
-        ptimer = setTimeout(starttime,1000);            // 添加计时器
+        time(h1,'2018/10/05');                           // 在一起的时间
+        ptimer = setTimeout(starttime,1000);           
+         // 添加计时器
 }
 
     function time(obj,futimg){
-        var nowtime = new Date().getTime();             // 现在时间转换为时间戳
-        var futruetime =  new Date(futimg).getTime();   // 未来时间转换为时间戳
-        var msec = nowtime-futruetime;                  // 毫秒 未来时间-现在时间
-        var time = (msec/1000);                         // 毫秒/1000
-        var day = parseInt(time/86400);                 // 天  24*60*60*1000 
-        var hour = parseInt(time/3600)-24*day;          // 小时 60*60 总小时数-过去的小时数=现在的小时数 
-        var minute = parseInt(time%3600/60);            // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
-        var second = parseInt(time%60);                 // 以60秒为一整份 取余 剩下秒数
-//              console.log(hour+":"+minute+":"+second)
+        var nowtime = new Date().getTime();            
+         // 现在时间转换为时间戳
+        var futruetime =  new Date(futimg).getTime();  
+         // 未来时间转换为时间戳
+        var msec = nowtime-futruetime;               
+           // 毫秒 未来时间-现在时间
+        var time = (msec/1000);                        
+         // 毫秒/1000
+        var day = parseInt(time/86400);                
+         // 天  24*60*60*1000 
+        var hour = parseInt(time/3600)-24*day;         
+         // 小时 60*60 总小时数-过去的小时数=现在的小时数 
+        var minute = parseInt(time%3600/60);        
+            // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
+        var second = parseInt(time%60);            
+             // 以60秒为一整份 取余 剩下秒数
+//  console.log(hour+":"+minute+":"+second)
 //              alert(hour)
-        obj.innerHTML="亲爱的<br>咱俩在一起的时间已经：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"了<br><span>一时间不知道从哪说起,真爱来了，我们要好好把握。<br>不管面临多大的压力,不管前面的路如何崎岖.<br>不管经历过什么,我仍坚信最浪漫的事就是和你一起慢慢变老.<br>相信中间的计时器,将永远继续下去,直至数据溢出.</span>"
+        obj.innerHTML="<br>這大約是我們認識到今天為止的時間<br>"+day+"天"+hour+"小時"+minute+"分"+second+"秒<br><br><span>即使我們並不在彼此身邊,可時間仍在一分一秒不停的在增加<br>"+day+"天,可我們真正陪伴在左右的時間可能1/3都不到.<br>這輩子能相處的時間究竟有多少或是剩多少沒人能知道<br>老實說,每次妳的欺騙,我總抱持著一種妳會改,而且妳也答應我會改而原諒<br>可是妳一次次的打臉我對妳的信任.<br>完全不進行任何報備,甚至還一次次的跑去我很反感的直銷聚會<br>我已經完全不知道,究竟我不在身邊時,妳究竟做了什麼,所有的不信任<br>都來自於妳對我一次次的欺騙.<br>或許妳可能覺得我大驚小怪吧,可是我就是喜歡胡思亂想鑽牛角尖<br>經我思考過後,我們真的是該放過彼此了<br>這幾天我一直等,想著各種方式妳都能聯絡我,甚至是寄GMail<br>可是貌似是我一廂情願罷了,妳壓根就不在乎<br>甚至已經好幾次有任何事情第一個想到的不是彼此<br>妳說的沒錯,人有很多顏色,就好比人有很多選擇<br>一輩子沒有必要把自己侷限在只能選擇一個人,是該讓自己多彩多姿<br>價值觀的不同,觀念的不同<br>你覺得女生刺青好看,妳覺得直銷能賺錢,這都是我沒辦法接受且反感的<br>可妳仍執意要做,更加深我自己對於價值觀念不同的想法<br>這感情並沒有想像中堅強<br>真的一次次被欺騙都是消耗著僅剩的感情罷了<br>屬於妳的東西,我會還你的<br>辛苦妳了,攤上了我這個不負責任的男人<br>我能做的也只有祝妳在自己選擇的人生道路上,能非常順遂</span>"
 
         return true;
     }
